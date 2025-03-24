@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white text-black px-8">
       <header className="text-center">
-        <h1 className="font-bold text-5xl">Muhamad Hafildh Afandi</h1>
+        <h1 className="font-bold text-5xl">Muhamad Hafiidh Afandi</h1>
         <p className="mt-2 text-lg text-gray-700">Web Developer & Tech Enthusiast</p>
       </header>
       <div className="mt-8 flex flex-col items-center">
