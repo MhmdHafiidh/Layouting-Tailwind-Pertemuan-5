@@ -1,11 +1,16 @@
 import type { Metadata } from 'next';
+import { defaultMetadata } from '../../utils/metadata';
 
 export const metadata: Metadata = {
     title: 'Esai',
-    description: 'Kumpulan esai dan tulisan saya.',
+    description: 'Halaman Esai.',
+    openGraph: {
+        images: "https://example.com/default-image.jpg",
+        url: "https://example.com",
+    },
 };
 
-export default function Essays() {
+export default function Essays({ metadata }: any) {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-white text-black px-8">
             <header className="text-center">

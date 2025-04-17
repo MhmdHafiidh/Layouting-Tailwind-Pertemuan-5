@@ -1,4 +1,15 @@
 import Image from "next/image";
+import type { Metadata } from 'next';
+import { defaultMetadata } from '../../utils/metadata';
+
+export const metadata: Metadata = {
+    title: 'Tentang Saya',
+    description: 'Halaman Tentang Saya.',
+    openGraph: {
+        images: "https://example.com/default-image.jpg",
+        url: "https://example.com",
+    },
+};
 
 const projects = [
     {
@@ -15,7 +26,7 @@ const projects = [
     },
 ];
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ metadata }: any) {
     return (
         <div className="max-w-5xl mx-auto p-6">
             <h1 className="text-4xl font-bold text-gray-900">Proyek Saya</h1>
